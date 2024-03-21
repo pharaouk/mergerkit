@@ -24,7 +24,6 @@ dependencies = [
     "sentencepiece",
     "protobuf",
 ]
-include = ["_data/architectures/*.json"]
 
 [project.optional-dependencies]
 dev = ["black~=24.2.0", "isort~=5.13.2", "pre-commit~=3.6.2"]
@@ -58,6 +57,8 @@ profile = "black"
 [tool.black]
 line-length = 88
 target-version = ['py37']
+include = ["_data/architectures/*.json"]
+
 include = '\.pyi?$'
 
 [tool.pytest.ini_options]
