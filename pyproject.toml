@@ -24,6 +24,7 @@ dependencies = [
     "sentencepiece",
     "protobuf",
 ]
+include = ["_data/architectures/*.json"]
 
 [project.optional-dependencies]
 dev = ["black~=24.2.0", "isort~=5.13.2", "pre-commit~=3.6.2"]
@@ -65,4 +66,3 @@ filterwarnings = [
     "ignore::pydantic.PydanticDeprecatedSince20:huggingface_hub.*:",
 ]
 testpaths = ["tests"]
-include = ["mergekit/_data/architectures/*.json"]
