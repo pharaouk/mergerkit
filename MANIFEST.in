@@ -1,0 +1,1 @@
+recursive-include mergekit/_data/architectures *.json

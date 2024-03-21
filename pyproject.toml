@@ -34,6 +34,12 @@ test = ["pytest~=8.0.1"]
 [project.urls]
 repository = "https://github.com/cg123/mergekit"
 
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.include]
+format = "mergekit/_data/architectures/*.json"
 
 [project.scripts]
 mergekit-yaml = "mergekit.scripts.run_yaml:main"
