@@ -65,3 +65,4 @@ filterwarnings = [
     "ignore::pydantic.PydanticDeprecatedSince20:huggingface_hub.*:",
 ]
 testpaths = ["tests"]
+include = ["mergekit/_data/architectures/*.json"]
