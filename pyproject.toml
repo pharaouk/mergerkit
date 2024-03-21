@@ -34,10 +34,6 @@ test = ["pytest~=8.0.1"]
 [project.urls]
 repository = "https://github.com/cg123/mergekit"
 
-
-[tool.poetry.include]
-format = "mergekit/_data/architectures/*.json"
-
 [project.scripts]
 mergekit-yaml = "mergekit.scripts.run_yaml:main"
 mergekit-mega = "mergekit.scripts.megamerge:main"
